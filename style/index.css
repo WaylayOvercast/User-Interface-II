@@ -1,1 +1,244 @@
-/* Add CSS styling here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{
+    width:100%;
+    background-color: rgb(19, 19, 24);
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+    display: none; 
+  }
+.nav{
+    top:0;
+    left:0; 
+    width:100%;
+    background: linear-gradient(39deg, rgba(9,9,9,1) 39%, rgba(61,13,106,1) 39%, rgba(61,13,106,1) 45%, rgba(13,106,85,1) 100%);
+}
+.stylePoints{
+    clip-path: polygon(0 0, 88% 0, 100% 100%, 0% 100%);
+    width: 45%;
+    background-color: rgb(20, 20, 20);
+}
+.stylePoints h1{
+    font-family: 'Anton', sans-serif;
+    margin-left: 10%;
+    margin-bottom: 1%;
+    font-size: 300%;
+    color:hsla(261, 68%, 44%, 0.363);
+    text-shadow: rgba(10, 25, 36,0.4) 2px 2px;
+    -webkit-text-stroke:1px hsla(103, 4%, 68%, 0.3);
+}
+.navLinks{
+    font-family: 'Anton', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navLinks a {
+    text-align: center;
+    width: 20%;
+    color:hsla(211, 73%, 48%, 0.563);
+    background:rgba(56, 56, 56,0.7);
+    padding: 1%;
+    transition:all .4s ease-in-out ;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 4px 10px 2px 1px rgba(0, 0, 0, 0.6);
+}
+.navLinks a:hover{
+    background:rgba(79, 39, 117, 0.705);
+    position: relative; 
+    transform: translate(3%, -6%);
+    box-shadow: 15px 15px 2px 1px rgba(0, 0, 0, 0.6);
+}
+.scroll{
+    background-image: url('../style/gauravdeep-singh-bansal--11Q1miT5Qc-unsplash.jpg');
+    background-size:cover ;
+    background-attachment: fixed;
+    background-position: 0% 30%;
+    width: 98%;
+    display: flex;
+    margin: auto;
+    margin-top: 1%;
+    padding: 10% 0% 10% 0%;
+}
+.photo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.desc{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Anton', sans-serif;
+    width: 50%;
+}
+.desc a{
+    background:rgba(56, 56, 56,0.97);
+    text-decoration: uppercase;
+    text-decoration: solid;
+    margin-top: 2%;
+    margin-left: 10%;
+    padding: 2%;
+    color:hsla(211, 73%, 48%, 0.963);
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.6);
+    transition: all ease-in-out .4s;
+    font-weight: 800;
+}
+.desc a:hover{
+    box-shadow: 4px 10px 5px 3px rgba(0, 0, 0, 0.3);
+    background:rgba(38, 9, 65, 0.8);
+    transform: translate(4%, -9%);
+}
+.desc2{
+    padding: 3%;
+    font-size: 2rem;
+    background-color: rgba(107, 141, 241, 0.384);
+    
+}
+.desc div{
+    margin-top: 5%;
+    margin-left: 25%;
+    width:70%;  
+}
+.tiles{
+    margin-top: 1%;
+    margin-bottom: .5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background: linear-gradient(39deg,rgba(13,106,85,1), rgba(61,13,106,1) 39%, rgba(61,13,106,1) 45%, rgba(13,106,85,1) 100%);
+}
+.tile1, .tile2, .tile3, .tile4, .tile5, .tile6  {
+    text-align: center;
+    padding: 1%; margin: 4%;
+    transition: all .4s ease-in-out;
+    box-shadow: 5px 2px 3px 2px rgba(0, 0, 0, 0.6);
+}
+.tile1:hover, .tile2:hover, .tile3:hover, .tile4:hover, .tile5:hover, .tile6:hover{
+    transform: translate(-3%, -3%);
+    box-shadow: 10px 10px 6px 6px rgba(0, 0, 0, 0.5);
+}
+.beforfoot{
+    background-image: url('../style/jack-b-iA9-ZBGgEwo-unsplash.jpg');
+    background-size:cover ;
+    background-attachment: fixed;
+    background-position: 0% 30%;
+    height: 50vh;
+    margin-left: .5%;
+    margin-right: .5%;
+    margin-bottom: .5%;
+
+}
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1%;
+    text-align: center; 
+    background: linear-gradient(39deg, rgba(13,106,85,1) 0%, rgba(61,13,106,1) 18%, rgba(61,13,106,1) 33%, rgba(29,29,29,1) 33%, rgba(45,44,44,1) 74%, rgba(61,13,106,1) 74%, rgba(59,17,105,1) 84%, rgba(13,106,85,1) 100%);
+}
+footer div{
+    width: 100%;
+    padding: 5%;
+
+}
+footer a:hover{
+    margin-right: 2%;
+    background:#0c0a29;
+    transform: scale(1.1);
+}
+.footerButton{
+    background:rgba(44, 5, 66, 0.7);
+}
+footer a{
+    background:rgba(44, 5, 66, 0.5);
+    transition: .7s;
+    padding: 1% 1.5% 3.5% 1.5%;
+    display: flex;
+    justify-content: center;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    text-decoration: uppercase;
+    text-decoration: solid;
+    color: rgb(173, 173, 173);
+}
+/* already did the phonesss n stuff for future work */
+@media(max-width: 800px){
+    .desc{
+        justify-content: center;
+        width: 50%;
+    }
+    .desc a{
+        width: 50%;
+        font-size: 1.5rem;
+        padding: 7%;
+        border-radius: 15%;
+    }
+    .desc2{
+        padding: 2%;
+        font-size: 2rem;
+        background-color: rgba(107, 141, 241, 0.784);
+        width: 100%;
+        border-radius: 10%;
+    }
+    .desc2 p{
+        padding: 2%;
+    }
+    
+    .desc div{
+        margin-top: 5%;
+        margin-left: 20%;
+        width:100%;  
+    }
+}
+@media(max-width: 500px){
+
+    .photo img{
+        margin-top: 10%;
+        width: 50%;
+    }
+    .desc{
+        width: 100%;
+    }
+    .desc a{
+        width: 50%;
+        margin-left: 25%;
+        font-size: 1.5rem;
+        padding: 5%;
+        border-radius: 15%;
+    }
+    .desc2{
+        padding: 2%;
+        font-size: 1.5rem;
+        background-color: rgba(107, 141, 241, 0.784);
+        width: 100%;
+        border-radius: 10%;
+        margin-right: 18%
+    }
+    .desc2 p{
+        padding: 2%;
+    }
+    .desc div{
+        margin-top: 5%;
+        margin-left: 20%;
+        width:100%;  
+    }
+    .tile1, .tile2, .tile3, .tile4, .tile5, .tile6 {
+        padding-bottom: 3%; margin: 0%;
+        width: 40%;
+        
+    }
+    .tile1 img, .tile2 img, .tile3 img, .tile4 img, .tile5 img, .tile6 img {
+        width: 100%;
+        
+    }
+}
